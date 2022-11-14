@@ -1,0 +1,76 @@
+.selectColor-background {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .flex-div {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pallet-img {
+    width: 15%;
+    height: auto;
+  }
+  .title {
+    font-size: 200%;
+    height: auto;
+    text-align: center;
+  }
+  .description {
+    height: auto;
+    text-align: center;
+  }
+  .colorChips {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    .colorChip {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin: 0 20px;
+      background-color: violet;
+    }
+  }
+  .select-btns {
+    height: 5%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    .btn {
+      width: 40%;
+      height: auto;
+      margin: 0 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      .btn-link {
+        width: auto;
+        height: auto;
+        font-size: 90%;
+        color: #8a8a8a;
+        text-decoration: none;
+      }
+      .arrow-img {
+        width: 20%;
+        height: auto;
+      }
+    }
+  }
+  .btn-skip {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    width: fit-content;
+    height: auto;
+
+    background-color: transparent;
+    border: 0;
+    color: #8a8a8a;
+    cursor: pointer;
+  }
+}
