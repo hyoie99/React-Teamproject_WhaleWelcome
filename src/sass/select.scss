@@ -1,0 +1,46 @@
+.background {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  .flex-div {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-size: 200%;
+      height: auto;
+      text-align: center;
+    }
+    .description {
+      font-size: 80%;
+      height: auto;
+      text-align: center;
+    }
+    .box-img {
+      width: 30%;
+      height: auto;
+    }
+    .select-box {
+      width: 10%;
+      height: auto;
+      margin-bottom: 50px;
+    }
+    .select-btns {
+      height: 5%;
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      .btn {
+        color: #8a8a8a;
+        font-size: 80%;
+        height: auto;
+        width: 30%;
+        margin: 0 5px;
+        text-decoration: none;
+        text-align: center;
+      }
+    }
+  }
+}
