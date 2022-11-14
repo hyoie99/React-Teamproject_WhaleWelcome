@@ -15,7 +15,7 @@ function Home() {
           src={require("../img/truck.png")}
           className="home-img"
         ></img>
-        <Link className="btn" to="/choose_another">
+        <Link className="home-btn" to="/choose_another">
           시작하기
         </Link>
       </div>
