@@ -1,12 +1,14 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import "../sass/background.scss";
+import "../sass/packaging.scss";
 
 function Packaging() {
   const navigate = useNavigate();
   const timeout = () => {
     setTimeout(() => {
       navigate("/packed");
-    }, 3000);
+    }, 1500);
   };
 
   useEffect(() => {
@@ -15,8 +17,14 @@ function Packaging() {
   });
 
   return (
-    <div>
-      <h1>즐겨찾기 / 북마크 내역을 포장하는 중...</h1>
+    <div className="packaging-background">
+      <div className="flex-div">
+        <div className="packaging-animation"></div>
+        <h1 className="title">
+          즐겨찾기, 북마크 내역을 <br />
+          포장하는 중...
+        </h1>
+      </div>
     </div>
   );
 }
