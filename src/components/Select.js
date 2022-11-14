@@ -8,7 +8,7 @@ function Select({ setLoading }) {
   };
 
   return (
-    <div className="background">
+    <div className="select-background">
       <div className="flex-div">
         <h1 className="title">가져오실 짐을 선택해주세요</h1>
         <p className="description">

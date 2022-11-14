@@ -4,7 +4,7 @@ import "../sass/background.scss";
 
 function Home() {
   return (
-    <div className="background">
+    <div className="home-background">
       <div className="flex-div">
         <h1 className="title">
           더 편리하고 빠른 웨일 브라우저로의 <br /> 입주를 결정하셨군요! <br />
