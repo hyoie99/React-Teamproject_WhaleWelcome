@@ -14,8 +14,8 @@ function SelectDefault() {
       </div>
       <p>웨일이 추천하는 옵션으로 선택할래요</p>
       <div>
-        <Link to="/select_color">이전</Link>
-        <Link to="/select_option">다음</Link>
+        <Link to="/select_option">이전</Link>
+        <Link to="/end">다음</Link>
       </div>
       <button>건너뛰기</button>
     </div>

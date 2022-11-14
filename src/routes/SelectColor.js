@@ -40,7 +40,7 @@ function SelectColor() {
             </Link>
           </div>
           <div className="btn">
-            <Link to="/select_default" className="btn-link">
+            <Link to="/select_option" className="btn-link">
               다음
             </Link>
             <img
