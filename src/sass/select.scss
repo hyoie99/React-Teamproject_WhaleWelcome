@@ -2,6 +2,7 @@
   height: 100%;
   display: flex;
   align-items: center;
+  position: relative;
   .flex-div {
     height: 70%;
     display: flex;
@@ -33,14 +34,37 @@
       display: flex;
       justify-content: center;
       .btn {
-        color: #8a8a8a;
-        font-size: 80%;
+        width: 40%;
         height: auto;
-        width: 30%;
         margin: 0 5px;
-        text-decoration: none;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        .btn-link {
+          width: auto;
+          height: auto;
+          font-size: 90%;
+          color: #8a8a8a;
+          text-decoration: none;
+        }
+        .arrow-img {
+          width: 20%;
+          height: auto;
+        }
       }
     }
+  }
+  .btn-skip {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    width: fit-content;
+    height: auto;
+
+    background-color: transparent;
+    border: 0;
+    color: #8a8a8a;
+    cursor: pointer;
   }
 }

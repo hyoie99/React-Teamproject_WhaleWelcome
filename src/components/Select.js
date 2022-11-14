@@ -24,15 +24,29 @@ function Select({ setLoading }) {
           <option>Chrome</option>
         </select>
         <div className="select-btns">
-          <Link to="/" className="btn">
-            이전
-          </Link>
-          <a onClick={clickNext} className="btn">
-            다음
-          </a>
+          <div className="btn">
+            <img
+              alt="왼쪽 화살표 이미지"
+              src={require("../img/arrow_left.png")}
+              className="arrow-img"
+            ></img>
+            <Link to="/" className="btn-link">
+              이전
+            </Link>
+          </div>
+          <div className="btn">
+            <a onClick={clickNext} className="btn-link">
+              다음
+            </a>
+            <img
+              alt="오른쪽 화살표 이미지"
+              src={require("../img/arrow_right.png")}
+              className="arrow-img"
+            ></img>
+          </div>
         </div>
       </div>
-      {/* <button>건너뛰기</button> */}
+      <button className="btn-skip">건너뛰기</button>
     </div>
   );
 }
