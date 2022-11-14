@@ -1,0 +1,37 @@
+.background {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  .flex-div {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      font-size: 150%;
+      height: auto;
+      text-align: center;
+      //   background-color: tan;
+    }
+    .home-img {
+      width: 30%;
+      height: auto;
+      //   background-color: hotpink;
+    }
+    .btn {
+      text-decoration: none;
+      background-color: #42c791;
+      border-radius: 5px;
+
+      font-size: 80%;
+      color: white;
+      width: 12%;
+      height: 8%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
