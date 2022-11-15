@@ -1,55 +1,43 @@
 import { Link } from "react-router-dom";
+import common from "../css/common.module.css";
+import style from "../css/color.module.css";
 
 function SelectColor() {
   return (
-    <div className="selectColor-background">
-      <div className="flex-div">
+    <div className={common.background}>
+      <div className={common.flex_div}>
         <img
           alt="팔레트 이미지"
           src={require("../img/pallet.png")}
-          className="pallet-img"
+          className={style.image}
         ></img>
-        <h1 className="title">
+        <h1 className={common.title}>
           새로 입주하실 브라우저의 테마 컬러를 골라볼까요?
         </h1>
-        <p className="description">
+        <p className={common.description}>
           웨일 브라우저 창의 색깔을 취향대로 골라보세요
         </p>
-        <div className="colorChips">
-          <div className="colorChip"></div>
-          <div className="colorChip"></div>
-          <div className="colorChip"></div>
-          <div className="colorChip"></div>
-          <div className="colorChip"></div>
-          <div className="colorChip"></div>
-          <div className="colorChip"></div>
-          <div className="colorChip"></div>
-          <div className="colorChip"></div>
-        </div>
-        <div className="select-btns">
-          <div className="btn">
+        <div className={style.color_chips}></div>
+        <div className={common.double_btn}>
+          <Link to="/choose_another" className={common.btn_link}>
             <img
               alt="왼쪽 화살표 이미지"
               src={require("../img/arrow_left.png")}
-              className="arrow-img"
+              className={common.btn_arrow}
             ></img>
-            <Link to="/choose_another" className="btn-link">
-              이전
-            </Link>
-          </div>
-          <div className="btn">
-            <Link to="/select_option" className="btn-link">
-              다음
-            </Link>
+            이전
+          </Link>
+          <Link to="/select_option" className={common.btn_link}>
+            다음
             <img
               alt="오른쪽 화살표 이미지"
               src={require("../img/arrow_right.png")}
-              className="arrow-img"
+              className={common.btn_arrow}
             ></img>
-          </div>
+          </Link>
         </div>
       </div>
-      <button className="btn-skip">건너뛰기</button>
+      <button className={common.skip_btn}>건너뛰기</button>
     </div>
   );
 }

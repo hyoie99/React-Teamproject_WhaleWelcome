@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import common from "../css/common.module.css";
+import style from "../css/packaging.module.css";
 
 function Packaging() {
   const navigate = useNavigate();
@@ -15,10 +17,10 @@ function Packaging() {
   });
 
   return (
-    <div className="packaging-background">
-      <div className="flex-div">
-        <div className="packaging-animation"></div>
-        <h1 className="title">
+    <div className={common.background}>
+      <div className={style.flex_div}>
+        <div className={style.animation}></div>
+        <h1 className={common.title}>
           즐겨찾기, 북마크 내역을 <br />
           포장하는 중...
         </h1>
