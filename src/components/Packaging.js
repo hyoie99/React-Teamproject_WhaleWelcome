@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "../sass/background.scss";
-import "../sass/packaging.scss";
 
 function Packaging() {
   const navigate = useNavigate();

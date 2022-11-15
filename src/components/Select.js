@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import "../sass/select.scss";
-import "../sass/background.scss";
 
 function Select({ setLoading }) {
   const clickNext = () => {
@@ -8,7 +6,7 @@ function Select({ setLoading }) {
   };
 
   return (
-    <div className="select-background">
+    <div className="background">
       <div className="flex-div">
         <h1 className="title">가져오실 짐을 선택해주세요</h1>
         <p className="description">
@@ -18,35 +16,37 @@ function Select({ setLoading }) {
         <img
           alt="택배상자 이미지"
           src={require("../img/box_before.png")}
-          className="box-img"
+          className="image"
         ></img>
         <select className="select-box">
           <option>Chrome</option>
+          <option>Edge</option>
+          <option>Safari</option>
         </select>
-        <div className="select-btns">
+        <div className="btns">
           <div className="btn">
-            <img
-              alt="왼쪽 화살표 이미지"
-              src={require("../img/arrow_left.png")}
-              className="arrow-img"
-            ></img>
             <Link to="/" className="btn-link">
-              이전
+              <img
+                alt="왼쪽 화살표 이미지"
+                src={require("../img/arrow_left.png")}
+                className="arrow-img"
+              ></img>
+              <p>이전</p>
             </Link>
           </div>
           <div className="btn">
             <a onClick={clickNext} className="btn-link">
-              다음
+              <p>다음</p>
+              <img
+                alt="오른쪽 화살표 이미지"
+                src={require("../img/arrow_right.png")}
+                className="arrow-img"
+              ></img>
             </a>
-            <img
-              alt="오른쪽 화살표 이미지"
-              src={require("../img/arrow_right.png")}
-              className="arrow-img"
-            ></img>
           </div>
         </div>
       </div>
-      <button className="btn-skip">건너뛰기</button>
+      {/* <button className="btn-skip">건너뛰기</button> */}
     </div>
   );
 }

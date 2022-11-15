@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import "../sass/background.scss";
-import "../sass/select_option.scss";
 
 function SelectOption() {
   return (
