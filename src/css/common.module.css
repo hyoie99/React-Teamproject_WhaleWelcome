@@ -25,11 +25,13 @@
 .title {
   font-size: 48px;
   text-align: center;
+  /* background-color: #42c791; */
 }
 
 .description {
   font-size: 15px;
   text-align: center;
+  /* background-color: #8a8a8a; */
 }
 
 .image {
