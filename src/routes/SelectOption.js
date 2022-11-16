@@ -23,11 +23,11 @@ function SelectOption() {
     { id: 12, value: false },
   ]);
   const clickLeft = () => {
-    setDis((cur) => (cur + 190 == 190 ? cur : cur + 190));
+    setDis((cur) => (cur + 190 === 190 ? cur : cur + 190));
     console.log(distance);
   };
   const clickRight = () => {
-    setDis((cur) => (cur - 190 == -(190 * 9) ? cur : cur - 190));
+    setDis((cur) => (cur - 190 === -(190 * 9) ? cur : cur - 190));
     console.log(distance);
   };
   useEffect(() => {
