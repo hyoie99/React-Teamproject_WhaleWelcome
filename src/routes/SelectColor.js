@@ -40,6 +40,11 @@ function SelectColor() {
         <p className={common.description}>
           웨일 브라우저 창의 색깔을 취향대로 골라보세요
         </p>
+        <img
+          alt="천장에 달린 갓 모양의 전등 이미지"
+          src={require("../img/light.png")}
+          className={style.light_img}
+        ></img>
         <div className={style.change_theme}>
           <div className={style.color_chips}>
             <div
@@ -212,7 +217,11 @@ function SelectColor() {
             ></img>
           </div>
         </div>
-
+        <img
+          alt="사다리 위의 페인트통이 올려져있는 이미지"
+          src={require("../img/paint.png")}
+          className={style.paint_img}
+        ></img>
         <div className={common.double_btn}>
           <Link to="/choose_another" className={common.btn_link}>
             <img

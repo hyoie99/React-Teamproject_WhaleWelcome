@@ -154,6 +154,18 @@
   top: 50px;
   left: 2px;
 }
+.light_img {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  right: 80px;
+}
+.paint_img {
+  width: 350px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
 .skip_btn {
   position: absolute;
