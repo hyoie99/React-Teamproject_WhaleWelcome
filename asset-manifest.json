@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/React-Teamproject_WhaleWelcome/static/css/main.7a2c8da2.css",
+    "main.js": "/React-Teamproject_WhaleWelcome/static/js/main.df7c496a.js",
+    "static/media/tab_new.png": "/React-Teamproject_WhaleWelcome/static/media/tab_new.48995b339b20aadff7c1.png",
+    "static/media/truck.png": "/React-Teamproject_WhaleWelcome/static/media/truck.81fb72f3990932eb8ee1.png",
+    "static/media/welcome.png": "/React-Teamproject_WhaleWelcome/static/media/welcome.483011b4940ca171048b.png",
+    "static/media/paint.png": "/React-Teamproject_WhaleWelcome/static/media/paint.44fdfc65012c11924570.png",
+    "static/media/theme_fix.png": "/React-Teamproject_WhaleWelcome/static/media/theme_fix.170699e6be0f1874fc29.png",
+    "static/media/theme_color9.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color9.7c2cd93e0360105f9d37.png",
+    "static/media/theme_color1.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color1.bdcff5b38cbd8a3d0a0a.png",
+    "static/media/theme_color7.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color7.27b7186c3844ff6990bb.png",
+    "static/media/theme_color10.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color10.90ac910b616947d0083f.png",
+    "static/media/theme_color15.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color15.91fe42a56884ebe4ed6c.png",
+    "static/media/theme_color12.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color12.15a9590b9c71db49544c.png",
+    "static/media/theme_color3.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color3.e2855f2fd223ace24cca.png",
+    "static/media/theme_color.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color.e3b7230ce5f30df3d836.png",
+    "static/media/theme_color8.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color8.e8ec81855e748b06677a.png",
+    "static/media/theme_color2.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color2.8368dac9b2cf644206c8.png",
+    "static/media/theme_color13.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color13.68c0c1edcdea9a362eef.png",
+    "static/media/theme_color5.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color5.fae4294ab451c97ed232.png",
+    "static/media/theme_color11.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color11.5cc5555ec12b60dc95a4.png",
+    "static/media/theme_color0.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color0.e6fd6360fbc05765d569.png",
+    "static/media/theme_color14.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color14.edeb643cfea619f32ff0.png",
+    "static/media/theme_color4.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color4.1283511154c60fc56774.png",
+    "static/media/theme_color6.png": "/React-Teamproject_WhaleWelcome/static/media/theme_color6.ba1920540c93f365f41a.png",
+    "static/media/option_table.png": "/React-Teamproject_WhaleWelcome/static/media/option_table.9459c412eeacce61878a.png",
+    "static/media/papago.png": "/React-Teamproject_WhaleWelcome/static/media/papago.6a8a2f17c412935bea40.png",
+    "static/media/box.png": "/React-Teamproject_WhaleWelcome/static/media/box.a7f1d5288ccc38966d2c.png",
+    "static/media/light.png": "/React-Teamproject_WhaleWelcome/static/media/light.7e164fffdf25f88680bf.png",
+    "index.html": "/React-Teamproject_WhaleWelcome/index.html",
+    "main.7a2c8da2.css.map": "/React-Teamproject_WhaleWelcome/static/css/main.7a2c8da2.css.map",
+    "main.df7c496a.js.map": "/React-Teamproject_WhaleWelcome/static/js/main.df7c496a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a2c8da2.css",
+    "static/js/main.df7c496a.js"
+  ]
+}
