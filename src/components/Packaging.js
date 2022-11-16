@@ -20,10 +20,7 @@ function Packaging() {
     <div className={common.background}>
       <div className={style.flex_div}>
         <div className={style.animation}></div>
-        <h1 className={common.title}>
-          즐겨찾기, 북마크 내역을 <br />
-          포장하는 중...
-        </h1>
+        <h1 className={common.title}>북마크 내역을 포장하는 중...</h1>
       </div>
     </div>
   );
