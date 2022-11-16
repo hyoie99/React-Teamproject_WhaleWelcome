@@ -12,7 +12,7 @@ import End from "./routes/End";
 function App() {
   return (
     <BrowserRouter>
-      <Routes basename={process.env.PUBLIC_URL}>
+      <Routes basename="/React-Teamproject_WhaleWelcome">
         <Route path="/" element={<Home />}></Route>
         <Route path="/choose_another" element={<AnotherBrowser />}></Route>
         <Route path="/packed" element={<Packed />}></Route>
