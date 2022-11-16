@@ -13,11 +13,11 @@ function Select({ setLoading }) {
         <h1 className={common.title}>가져오실 짐을 선택해주세요</h1>
         <p className={common.description}>
           사용하던 브라우저의 즐겨찾기/북마크를 <br />
-          그대로 웨일에서 사용할 수있습니다.
+          그대로 웨일에서 사용할 수 있습니다.
         </p>
         <img
           alt="택배상자 이미지"
-          src={require("../img/box_before.png")}
+          src={require("../img/box.png")}
           className={common.image}
         ></img>
         <select className={style.select_box}>
