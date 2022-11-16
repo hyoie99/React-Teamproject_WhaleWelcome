@@ -32,7 +32,7 @@ function SelectColor() {
     setTab(index);
   };
   return (
-    <div className={common.background}>
+    <div className={style.background}>
       <div className={style.flex_div}>
         <h1 className={common.title}>
           새로 입주하실 브라우저의 <br /> 테마 컬러를 골라볼까요?
@@ -206,7 +206,7 @@ function SelectColor() {
           </div>
           <div className={style.theme_img}>
             <img
-              alt="색상이 적용되지 않은 브라우저 탭 이미지"
+              alt="브라우저 상단 탭 이미지"
               src={require(`../img/theme_img/theme_color${tab}.png`)}
               className={style.change_img}
             ></img>

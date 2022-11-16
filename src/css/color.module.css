@@ -1,3 +1,12 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff8ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .flex_div {
   height: 85%;
   width: 100%;
@@ -24,6 +33,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  z-index: 1;
   /* background-color: cadetblue; */
 }
 .color_chip {
@@ -125,14 +135,14 @@
   background-color: #0c374c;
 }
 #color16 {
-  background-color: #bd7f37;
+  background-color: #2ecdad;
 }
 #color16_2 {
   width: 20px;
   height: 40px;
   border-bottom-left-radius: 40px;
   border-top-left-radius: 40px;
-  background-color: #0c374c;
+  background-color: #142961;
 }
 
 .theme_img {
@@ -142,17 +152,17 @@
   /* background-color: indianred; */
 }
 .change_img {
-  width: 560px;
+  width: 550px;
   position: absolute;
-  top: 30px;
-  left: -30px;
+  top: 0px;
+  left: -50px;
   z-index: 1;
 }
 .fix_img {
-  width: 450px;
+  width: 440px;
   position: absolute;
-  top: 50px;
-  left: 2px;
+  top: 100px;
+  left: 5px;
 }
 .light_img {
   width: 200px;
@@ -165,6 +175,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  /* background-color: blanchedalmond; */
 }
 
 .skip_btn {
