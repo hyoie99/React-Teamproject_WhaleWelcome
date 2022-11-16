@@ -6,18 +6,43 @@ function SelectColor() {
   return (
     <div className={common.background}>
       <div className={common.flex_div}>
-        <img
-          alt="팔레트 이미지"
-          src={require("../img/pallet.png")}
-          className={style.image}
-        ></img>
         <h1 className={common.title}>
-          새로 입주하실 브라우저의 테마 컬러를 골라볼까요?
+          새로 입주하실 브라우저의 <br /> 테마 컬러를 골라볼까요?
         </h1>
         <p className={common.description}>
           웨일 브라우저 창의 색깔을 취향대로 골라보세요
         </p>
-        <div className={style.color_chips}></div>
+        <div className={style.change_theme}>
+          <div className={style.color_chips}>
+            <div id={style.color1} className={style.color_chip}></div>
+            <div id={style.color2} className={style.color_chip}></div>
+            <div id={style.color3} className={style.color_chip}></div>
+            <div id={style.color4} className={style.color_chip}></div>
+            <div id={style.color5} className={style.color_chip}></div>
+            <div id={style.color6} className={style.color_chip}></div>
+            <div id={style.color7} className={style.color_chip}></div>
+            <div id={style.color8} className={style.color_chip}></div>
+            <div id={style.color9} className={style.color_chip}></div>
+            <div id={style.color10} className={style.color_chip}></div>
+            <div id={style.color11} className={style.color_chip}></div>
+            <div id={style.color12} className={style.color_chip}></div>
+            <div id={style.color13} className={style.color_chip}></div>
+            <div id={style.color14} className={style.color_chip}></div>
+            <div id={style.color15} className={style.color_chip}></div>
+            <div id={style.color16} className={style.color_chip}></div>
+          </div>
+          <div className={style.theme_img}>
+            <img
+              alt="색상이 적용되지 않은 브라우저 탭 이미지"
+              src={require("../img/theme_color0.png")}
+            ></img>
+            <img
+              alt="네이버 메인화면 이미지"
+              src={require("../img/theme_fix.png")}
+            ></img>
+          </div>
+        </div>
+
         <div className={common.double_btn}>
           <Link to="/choose_another" className={common.btn_link}>
             <img
