@@ -1,19 +1,346 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import common from "../css/common.module.css";
 import style from "../css/option.module.css";
 
 function SelectOption() {
+  const [distance, setDis] = useState(0);
+  const [move, setMove] = useState();
+  const [checkBox, setCheckBox] = useState(false);
+  const [checkCir, setCheckCir] = useState([
+    { id: 0, value: false },
+    { id: 1, value: false },
+    { id: 2, value: false },
+    { id: 3, value: false },
+    { id: 4, value: false },
+    { id: 5, value: false },
+    { id: 6, value: false },
+    { id: 7, value: false },
+    { id: 8, value: false },
+    { id: 9, value: false },
+    { id: 10, value: false },
+    { id: 11, value: false },
+    { id: 12, value: false },
+  ]);
+  const clickLeft = () => {
+    setDis((cur) => (cur + 190 == 190 ? cur : cur + 190));
+    console.log(distance);
+  };
+  const clickRight = () => {
+    setDis((cur) => (cur - 190 == -(190 * 9) ? cur : cur - 190));
+    console.log(distance);
+  };
+  useEffect(() => {
+    setMove({ transform: `translateX(${distance}px)` });
+  }, [distance]);
+  const clickCheckBox = () => {
+    setCheckCir((cur) => cur.map((c) => ({ id: c.id, value: false })));
+    setCheckBox((cur) => (!cur ? `${style.check_img}` : null));
+  };
+  const clickCheckCir = (index) => {
+    setCheckCir((cur) =>
+      cur.map((c) => (c.id === index ? { ...c, value: !c.value } : { ...c }))
+    );
+    setCheckBox(null);
+  };
+
   return (
     <div className={common.background}>
       <div className={common.flex_div}>
         <h1 className={common.title}>
-          웨일 브라우저에는 다양한 기능이 <br />
-          풀옵션으로 갖춰져 있답니다! <br /> 입주 시 필요한 옵션을 선택하세요.
+          웨일엔 다양한 기능이 풀옵션으로 갖춰져 있답니다! <br /> 입주 시 필요한
+          옵션을 선택하세요.
         </h1>
         <p className={common.description}>
-          사이드바에 들어갈 기능을 골라보세요
+          사이드바에서 필요할 때 바로 꺼내 쓸 기능을 골라보세요
         </p>
-        <div className={style.select_options}></div>
+        <div className={style.select_option}>
+          <img
+            alt="왼쪽 화살표 이미지"
+            src={require("../img/arrow_left.png")}
+            className={style.arrow_img}
+            onClick={clickLeft}
+          ></img>
+          <div className={style.options}>
+            <div
+              onClick={() => clickCheckCir(0)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[0].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>그린닷</h3>
+              <p className={style.option_des}>모바일 환경 미리보기</p>
+            </div>
+            <div
+              onClick={() => clickCheckCir(1)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[1].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>도구 모음</h3>
+              <p className={style.option_des}>유용한 도구가 잔뜩</p>
+            </div>
+            <div
+              onClick={() => clickCheckCir(2)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[2].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>스크랩북</h3>
+              <p className={style.option_des}>생산성 높이는 모아보기</p>
+            </div>
+            <div
+              onClick={() => clickCheckCir(3)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[3].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>북마크</h3>
+              <p className={style.option_des}>즐겨찾는 페이지</p>
+            </div>
+            <div
+              onClick={() => clickCheckCir(4)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[4].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>번역</h3>
+              <p className={style.option_des}>똑똑한 AI 번역기</p>
+            </div>
+            <div
+              onClick={() => clickCheckCir(5)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[5].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>뮤직 플레이어</h3>
+              <p className={style.option_des}>언제나 음악을 함께</p>
+            </div>
+            <div
+              onClick={() => clickCheckCir(6)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[6].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>네이버 웹툰</h3>
+              <p className={style.option_des}>재밌는 웹툰이 한가득</p>
+            </div>
+            <div
+              onClick={() => clickCheckCir(7)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[7].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>네이버 메모</h3>
+              <p className={style.option_des}>간단한 기록은 여기에</p>
+            </div>
+            <div
+              onClick={() => clickCheckCir(8)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[8].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>NOW</h3>
+              <p className={style.option_des}>귀가 즐거운 경험</p>
+            </div>
+            <div
+              onClick={() => clickCheckCir(9)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[9].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>네이버 캘린더</h3>
+              <p className={style.option_des}>나만의 스케쥴 매니저</p>
+            </div>
+            <div
+              onClick={() => clickCheckCir(10)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[10].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>오디오 클립</h3>
+              <p className={style.option_des}>즐거움이 들린다</p>
+            </div>
+            <div
+              onClick={() => clickCheckCir(11)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[11].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>네이버 메일</h3>
+              <p className={style.option_des}>더욱 편리한 메일함</p>
+            </div>
+            <div
+              onClick={() => clickCheckCir(12)}
+              style={move}
+              className={style.option}
+            >
+              <img
+                src={require("../img/icon_img/papago.png")}
+                alt="파파고 아이콘 이미지"
+                className={style.icon_img}
+              ></img>
+              <div className={style.option_check}>
+                <div
+                  className={
+                    checkCir[12].value ? `${style.option_checked}` : null
+                  }
+                ></div>
+              </div>
+              <h3 className={style.option_title}>네이버 증권</h3>
+              <p className={style.option_des}>손쉬운 주가 확인</p>
+            </div>
+          </div>
+          <img
+            alt="오른쪽 화살표 이미지"
+            src={require("../img/arrow_right.png")}
+            className={style.arrow_img}
+            onClick={clickRight}
+          ></img>
+        </div>
+        <img
+          alt="초록색 전등과 시계가 올려져있는 책상 이미지"
+          src={require("../img/option_table.png")}
+          className={style.table_img}
+        ></img>
+        <div className={style.description}>
+          <p>웨일이 추천하는 옵션으로 선택할래요</p>
+          <div onClick={clickCheckBox} className={style.checkbox}>
+            <div className={`${checkBox}`}></div>
+          </div>
+        </div>
         <div className={common.double_btn}>
           <Link to="/select_color" className={common.btn_link}>
             <img
