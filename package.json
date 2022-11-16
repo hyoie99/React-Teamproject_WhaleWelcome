@@ -1,6 +1,6 @@
 {
-  "name": "whale-welcome",
   "homepage": "https://hyoie99.github.io/React-Teamproject_WhaleWelcome",
+  "name": "whale-welcome",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
