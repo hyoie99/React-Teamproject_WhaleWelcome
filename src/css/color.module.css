@@ -2,6 +2,7 @@
   width: 100vw;
   height: 100vh;
   background-color: #fff8ef;
+  /* background-color: black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,10 +153,10 @@
   /* background-color: indianred; */
 }
 .change_img {
-  width: 550px;
+  width: 532px;
   position: absolute;
-  top: 0px;
-  left: -50px;
+  top: 3px;
+  left: -41px;
   z-index: 1;
 }
 .fix_img {
