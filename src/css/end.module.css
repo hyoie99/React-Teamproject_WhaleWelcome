@@ -6,6 +6,7 @@
   top: 8%;
   left: 50%;
   transform: translate(-50%);
+  color: #2e2e2e;
 }
 
 .single_btn {
@@ -21,4 +22,6 @@
 
 .video {
   z-index: -1;
+  /* width: 100vw;
+  height: 100vh; */
 }

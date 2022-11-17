@@ -58,9 +58,11 @@
 .option_title {
   font-size: 16px;
   font-weight: 400;
+  color: #2e2e2e;
 }
 .option_des {
   font-size: 14px;
+  color: #2e2e2e;
 }
 .table_img {
   width: 350px;
@@ -74,6 +76,7 @@
   height: 20px;
   display: flex;
   align-items: center;
+  color: #2e2e2e;
 }
 .checkbox {
   width: 18px;

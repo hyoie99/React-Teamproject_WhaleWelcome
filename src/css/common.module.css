@@ -25,12 +25,14 @@
 .title {
   font-size: 48px;
   text-align: center;
+  color: #2e2e2e;
   /* background-color: #42c791; */
 }
 
 .description {
   font-size: 15px;
   text-align: center;
+  color: #2e2e2e;
   /* background-color: #8a8a8a; */
 }
 

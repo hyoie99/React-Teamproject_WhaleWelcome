@@ -16,7 +16,7 @@ function End() {
         playing
         muted
         loop
-        width="100vw"
+        width="100%"
         height="100vh"
         className={style.video}
       />
