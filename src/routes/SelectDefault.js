@@ -22,6 +22,7 @@ function SelectDefault() {
     { id: 10, value: false },
   ]);
   const [checkBox, setCheckBox] = useState(false);
+  const whaleImg = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   const clickLeft = () => {
     setDis((cur) => (cur + interval === interval ? cur : cur + interval));
@@ -52,6 +53,10 @@ function SelectDefault() {
 
   return (
     <div className={style.background}>
+      <img
+        className={style.plant_img}
+        src={require("../img/black_plant.png")}
+      ></img>
       <div className={style.flex_div}>
         <h1 className={style.title}>
           훌륭한 안목이네요! <br />
@@ -66,6 +71,12 @@ function SelectDefault() {
           <img
             className={style.tab_change_image}
             src={require(`../img/default_img/img${select}.png`)}
+          ></img>
+          <img
+            className={
+              select in whaleImg ? `${style.clock_img}` : `${style.not_clock}`
+            }
+            src={require("../img/default_img/clock.png")}
           ></img>
         </div>
         <div className={style.select_image}>
@@ -331,6 +342,10 @@ function SelectDefault() {
           </Link>
         </div>
       </div>
+      <img
+        className={style.black_clock_img}
+        src={require("../img/black_clock.png")}
+      ></img>
       <button className={style.skip_btn}>건너뛰기</button>
     </div>
   );
