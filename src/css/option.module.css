@@ -1,5 +1,5 @@
 .select_option {
-  width: 1020px;
+  width: 920px;
   height: 200px;
   /* background-color: seagreen; */
   display: flex;
@@ -33,7 +33,7 @@
   cursor: pointer;
 }
 .icon_img {
-  width: 150px;
+  width: 130px;
 }
 .option_check {
   position: absolute;

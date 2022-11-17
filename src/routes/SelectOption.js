@@ -4,6 +4,7 @@ import common from "../css/common.module.css";
 import style from "../css/option.module.css";
 
 function SelectOption() {
+  const interval = 170;
   const [distance, setDis] = useState(0);
   const [move, setMove] = useState();
   const [checkBox, setCheckBox] = useState(false);
@@ -23,11 +24,13 @@ function SelectOption() {
     { id: 12, value: false },
   ]);
   const clickLeft = () => {
-    setDis((cur) => (cur + 190 === 190 ? cur : cur + 190));
+    setDis((cur) => (cur + interval === interval ? cur : cur + interval));
     console.log(distance);
   };
   const clickRight = () => {
-    setDis((cur) => (cur - 190 === -(190 * 9) ? cur : cur - 190));
+    setDis((cur) =>
+      cur - interval === -(interval * 9) ? cur : cur - interval
+    );
     console.log(distance);
   };
   useEffect(() => {
