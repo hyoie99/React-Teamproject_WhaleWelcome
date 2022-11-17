@@ -17,7 +17,7 @@
 .select_option {
   width: 920px;
   height: 200px;
-  /* background-color: seagreen; */
+  /* background-color: rgb(178, 248, 208); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,6 +81,7 @@
   font-size: 14px;
   color: #2e2e2e;
   text-align: center;
+  word-break: keep-all;
 }
 .table_img {
   width: 350px;
