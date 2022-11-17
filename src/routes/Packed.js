@@ -6,7 +6,7 @@ function Packed() {
     <div className={common.background}>
       <div className={common.flex_div}>
         <h1 className={common.title}>
-          당신의 소중한 기록이 <br />
+          나의 소중한 기록이 <br />
           안전하게 포장되어 배송 됐어요!
         </h1>
         <img

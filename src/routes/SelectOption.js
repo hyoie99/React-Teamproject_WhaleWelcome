@@ -86,7 +86,7 @@ function SelectOption() {
           웨일엔 다양한 기능이 풀옵션으로 갖춰져 있답니다! <br /> 입주 시 필요한
           옵션을 선택하세요.
         </h1>
-        <p className={common.description}>
+        <p className={style.description}>
           사이드바에서 필요할 때 바로 꺼내 쓸 기능을 골라보세요
         </p>
         <div className={style.select_option}>

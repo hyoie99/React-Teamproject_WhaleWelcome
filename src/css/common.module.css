@@ -37,7 +37,8 @@
 }
 
 .image {
-  width: 270px;
+  width: 300px;
+  margin-top: -20px;
 }
 
 .single_btn {

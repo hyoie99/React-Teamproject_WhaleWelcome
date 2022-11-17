@@ -18,7 +18,7 @@ function Select({ setLoading }) {
         <img
           alt="택배상자 이미지"
           src={require("../img/box.png")}
-          className={common.image}
+          className={style.image}
         ></img>
         <select className={style.select_box}>
           <option>Chrome</option>
