@@ -68,8 +68,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon0.png")}
+                alt="그린닷 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
@@ -88,8 +88,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon1.png")}
+                alt="도구모음 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
@@ -108,8 +108,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon2.png")}
+                alt="스크랩북 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
@@ -128,8 +128,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon3.png")}
+                alt="북마크 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
@@ -148,8 +148,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon4.png")}
+                alt="번역 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
@@ -168,8 +168,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon5.png")}
+                alt="뮤직 플레이어 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
@@ -188,8 +188,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon6.png")}
+                alt="네이버 웹툰 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
@@ -208,8 +208,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon7.png")}
+                alt="네이버 메모 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
@@ -228,8 +228,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon8.png")}
+                alt="나우 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
@@ -248,8 +248,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon9.png")}
+                alt="네이버 캘린더 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
@@ -268,8 +268,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon10.png")}
+                alt="오디오 클립 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
@@ -288,8 +288,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon11.png")}
+                alt="네이버 메일 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
@@ -308,8 +308,8 @@ function SelectOption() {
               className={style.option}
             >
               <img
-                src={require("../img/icon_img/papago.png")}
-                alt="파파고 아이콘 이미지"
+                src={require("../img/icon_img/icon12.png")}
+                alt="네이버 증권 아이콘 이미지"
                 className={style.icon_img}
               ></img>
               <div className={style.option_check}>
