@@ -44,7 +44,15 @@ function Select({ setLoading }) {
           </a>
         </div>
       </div>
-      <button className={common.skip_btn}>건너뛰기</button>
+      {/* <button
+        onClick="location.href='whale://newtab/'"
+        className={common.skip_btn}
+      >
+        건너뛰기
+      </button> */}
+      <a href="whale://newtab/" className={common.skip_btn}>
+        건너뛰기
+      </a>
     </div>
   );
 }
