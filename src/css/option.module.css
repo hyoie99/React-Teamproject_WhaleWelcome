@@ -91,11 +91,33 @@
   /* overflow-y: hidden;
   overflow-x: auto; */
 }
+.icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow-x: auto;
+}
 .preview_icon {
   max-width: 65px;
   height: auto;
-  margin: 5px;
+  margin: 7px;
   overflow-x: auto;
+  cursor: pointer;
+  /* z-index: 2; */
+}
+.preview_icon:hover {
+  filter: brightness(50%);
+  z-index: -2;
+}
+.delete_icon {
+  max-width: 32px;
+  height: auto;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 .description {

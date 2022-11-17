@@ -3,12 +3,18 @@ import { Link } from "react-router-dom";
 import common from "../css/common.module.css";
 import style from "../css/option.module.css";
 
-function SmallIcon({ index }) {
+function SmallIcon({ index, onClick }) {
   return (
-    <img
-      src={require(`../img/icon_img/icon${index}.png`)}
-      className={`${style.preview_icon}`}
-    ></img>
+    <div onClick={onClick} className={`${style.icon}`}>
+      <img
+        src={require(`../img/icon_img/icon${index}.png`)}
+        className={`${style.preview_icon}`}
+      ></img>
+      <img
+        src={require(`../img/delete.png`)}
+        className={`${style.delete_icon}`}
+      ></img>
+    </div>
   );
 }
 
@@ -359,7 +365,7 @@ function SelectOption() {
         ></img>
         <div className={style.preview}>
           {list.map((l) => (
-            <SmallIcon index={l} />
+            <SmallIcon index={l} onClick={() => clickCheckCir(l)} />
           ))}
         </div>
         <div className={style.description}>
