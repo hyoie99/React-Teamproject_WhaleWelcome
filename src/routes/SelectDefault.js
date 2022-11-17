@@ -331,7 +331,7 @@ function SelectDefault() {
           <Link to="/select_option" className={style.btn_link}>
             <img
               alt="왼쪽 화살표 이미지"
-              src={require("../img/arrow_left.png")}
+              src={require("../img/arrow_left2.png")}
               className={common.btn_arrow}
             ></img>
             이전
@@ -340,7 +340,7 @@ function SelectDefault() {
             다음
             <img
               alt="오른쪽 화살표 이미지"
-              src={require("../img/arrow_right.png")}
+              src={require("../img/arrow_right2.png")}
               className={common.btn_arrow}
             ></img>
           </Link>
