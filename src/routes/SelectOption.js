@@ -53,7 +53,12 @@ function SelectOption() {
   }, [distance]);
 
   const clickCheckBox = () => {
-    setCheckCir((cur) => cur.map((c) => ({ id: c.id, value: false })));
+    const recommend = [0, 1, 2, 3, 4, 5, 6, 7];
+    setCheckCir((cur) =>
+      checkBox
+        ? cur.map((c) => ({ id: c.id, value: false }))
+        : cur.map((c) => (c.id in recommend ? { ...c, value: true } : { ...c }))
+    );
     setCheckBox((cur) => (!cur ? `${style.check_img}` : null));
   };
   const clickCheckCir = (index) => {
