@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Teamproject_WhaleWelcome/static/css/main.7a2c8da2.css",
-    "main.js": "/React-Teamproject_WhaleWelcome/static/js/main.95c8ce41.js",
+    "main.js": "/React-Teamproject_WhaleWelcome/static/js/main.6c209fd9.js",
     "static/media/tab_new.png": "/React-Teamproject_WhaleWelcome/static/media/tab_new.48995b339b20aadff7c1.png",
     "static/media/truck.png": "/React-Teamproject_WhaleWelcome/static/media/truck.81fb72f3990932eb8ee1.png",
     "static/media/welcome.png": "/React-Teamproject_WhaleWelcome/static/media/welcome.483011b4940ca171048b.png",
@@ -30,10 +30,10 @@
     "static/media/light.png": "/React-Teamproject_WhaleWelcome/static/media/light.7e164fffdf25f88680bf.png",
     "index.html": "/React-Teamproject_WhaleWelcome/index.html",
     "main.7a2c8da2.css.map": "/React-Teamproject_WhaleWelcome/static/css/main.7a2c8da2.css.map",
-    "main.95c8ce41.js.map": "/React-Teamproject_WhaleWelcome/static/js/main.95c8ce41.js.map"
+    "main.6c209fd9.js.map": "/React-Teamproject_WhaleWelcome/static/js/main.6c209fd9.js.map"
   },
   "entrypoints": [
     "static/css/main.7a2c8da2.css",
-    "static/js/main.95c8ce41.js"
+    "static/js/main.6c209fd9.js"
   ]
 }
