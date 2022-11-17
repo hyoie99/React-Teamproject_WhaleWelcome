@@ -1,6 +1,6 @@
 .flex_div {
   /* background-color: bisque; */
-  height: 80%;
+  height: 75%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
