@@ -73,14 +73,16 @@ function SelectDefault() {
             alt="웨일 브라우저의 기본 새 탭 이미지"
           ></img>
           <img
-            className={style.tab_change_image}
+            className={
+              select === "" ? `${style.clock_img}` : `${style.tab_change_image}`
+            }
             src={require(`../img/default_img/img${select}.png`)}
           ></img>
           <img
             className={
               select in whaleImg ? `${style.clock_img}` : `${style.not_clock}`
             }
-            src={require("../img/default_img/clock.png")}
+            src={require("../img/default_img/img.png")}
           ></img>
         </div>
         <div className={style.select_image}>
