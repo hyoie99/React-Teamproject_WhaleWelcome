@@ -25,8 +25,8 @@ function Packaging() {
           url={packagingVideo}
           playing
           muted
-          width="130%"
-          height="120%"
+          width="97%"
+          height="97%"
           className={style.video}
         />
         <h1 className={style.title}>북마크 내역을 포장하는 중...</h1>
