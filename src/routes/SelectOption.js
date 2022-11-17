@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 import common from "../css/common.module.css";
 import style from "../css/option.module.css";
 
+function SmallIcon({ index }) {
+  return (
+    <img
+      src={require(`../img/icon_img/icon${index}.png`)}
+      className={`${style.preview_icon}`}
+    ></img>
+  );
+}
+
 function SelectOption() {
   const interval = 170;
   const [distance, setDis] = useState(0);
@@ -23,19 +32,20 @@ function SelectOption() {
     { id: 11, value: false },
     { id: 12, value: false },
   ]);
+  const [list, setList] = useState([]);
+
   const clickLeft = () => {
     setDis((cur) => (cur + interval === interval ? cur : cur + interval));
-    console.log(distance);
   };
   const clickRight = () => {
     setDis((cur) =>
       cur - interval === -(interval * 9) ? cur : cur - interval
     );
-    console.log(distance);
   };
   useEffect(() => {
     setMove({ transform: `translateX(${distance}px)` });
   }, [distance]);
+
   const clickCheckBox = () => {
     setCheckCir((cur) => cur.map((c) => ({ id: c.id, value: false })));
     setCheckBox((cur) => (!cur ? `${style.check_img}` : null));
@@ -47,9 +57,18 @@ function SelectOption() {
     setCheckBox(null);
   };
 
+  useEffect(() => {
+    setList([]);
+    checkCir.map((cir) => {
+      if (cir.value === true) {
+        setList((cur) => [...cur, cir.id]);
+      }
+    });
+  }, [checkCir]);
+
   return (
     <div className={common.background}>
-      <div className={common.flex_div}>
+      <div className={style.flex_div}>
         <h1 className={common.title}>
           웨일엔 다양한 기능이 풀옵션으로 갖춰져 있답니다! <br /> 입주 시 필요한
           옵션을 선택하세요.
@@ -338,6 +357,11 @@ function SelectOption() {
           src={require("../img/option_table.png")}
           className={style.table_img}
         ></img>
+        <div className={style.preview}>
+          {list.map((l) => (
+            <SmallIcon index={l} />
+          ))}
+        </div>
         <div className={style.description}>
           <p>웨일이 추천하는 옵션으로 선택할래요</p>
           <div onClick={clickCheckBox} className={style.checkbox}>
@@ -363,7 +387,7 @@ function SelectOption() {
           </Link>
         </div>
       </div>
-      <button className={common.skip_btn}>건너뛰기</button>
+      <button className={style.skip_btn}>건너뛰기</button>
     </div>
   );
 }
