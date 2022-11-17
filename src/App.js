@@ -11,8 +11,8 @@ import End from "./routes/End";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes basename="/React-Teamproject_WhaleWelcome">
+    <BrowserRouter basename="/React-Teamproject_WhaleWelcome">
+      <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/choose_another" element={<AnotherBrowser />}></Route>
         <Route path="/packed" element={<Packed />}></Route>
