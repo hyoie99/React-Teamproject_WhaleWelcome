@@ -57,7 +57,9 @@ function SelectOption() {
     setCheckCir((cur) =>
       checkBox
         ? cur.map((c) => ({ id: c.id, value: false }))
-        : cur.map((c) => (c.id in recommend ? { ...c, value: true } : { ...c }))
+        : cur.map((c) =>
+            c.id in recommend ? { ...c, value: true } : { ...c, value: false }
+          )
     );
     setCheckBox((cur) => (!cur ? `${style.check_img}` : null));
   };
