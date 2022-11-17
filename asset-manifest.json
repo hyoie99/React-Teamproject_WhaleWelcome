@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Teamproject_WhaleWelcome/static/css/main.afd6c383.css",
-    "main.js": "/React-Teamproject_WhaleWelcome/static/js/main.1a004074.js",
+    "main.js": "/React-Teamproject_WhaleWelcome/static/js/main.de7d6a09.js",
     "static/media/img6.png": "/React-Teamproject_WhaleWelcome/static/media/img6.11ae14eedcabbbcb6e1f.png",
     "static/media/img0.png": "/React-Teamproject_WhaleWelcome/static/media/img0.9675950d0339a8c647b9.png",
     "static/media/welcome.mp4": "/React-Teamproject_WhaleWelcome/static/media/welcome.132bc9680d914e647203.mp4",
@@ -58,10 +58,10 @@
     "static/media/clock.png": "/React-Teamproject_WhaleWelcome/static/media/clock.85535e6bff8ef0182413.png",
     "index.html": "/React-Teamproject_WhaleWelcome/index.html",
     "main.afd6c383.css.map": "/React-Teamproject_WhaleWelcome/static/css/main.afd6c383.css.map",
-    "main.1a004074.js.map": "/React-Teamproject_WhaleWelcome/static/js/main.1a004074.js.map"
+    "main.de7d6a09.js.map": "/React-Teamproject_WhaleWelcome/static/js/main.de7d6a09.js.map"
   },
   "entrypoints": [
     "static/css/main.afd6c383.css",
-    "static/js/main.1a004074.js"
+    "static/js/main.de7d6a09.js"
   ]
 }
