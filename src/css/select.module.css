@@ -1,4 +1,6 @@
 .select_box {
   width: 180px;
   height: 36px;
+  /* padding: 10px; */
+  color: #aaaaaa;
 }

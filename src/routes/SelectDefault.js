@@ -64,6 +64,10 @@ function SelectDefault() {
         </h1>
         <div className={style.tab_image}>
           <img
+            className={style.black_clock_img}
+            src={require("../img/black_clock.png")}
+          ></img>
+          <img
             className={style.tab_fix_image}
             src={require("../img/tab_fix.png")}
             alt="웨일 브라우저의 기본 새 탭 이미지"
@@ -342,10 +346,6 @@ function SelectDefault() {
           </Link>
         </div>
       </div>
-      <img
-        className={style.black_clock_img}
-        src={require("../img/black_clock.png")}
-      ></img>
       <button className={style.skip_btn}>건너뛰기</button>
     </div>
   );

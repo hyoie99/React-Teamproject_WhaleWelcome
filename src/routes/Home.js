@@ -6,8 +6,8 @@ function Home() {
     <div className={common.background}>
       <div className={common.flex_div}>
         <h1 className={common.title}>
-          더 편리하고 빠른 <br />
-          웨일 브라우저로의 입주를 결정하셨군요!
+          더 편리하고 빠른 웨일 브라우저로의 <br />
+          입주를 결정하셨군요!
         </h1>
         <p className={common.description}>그럼 이사를 시작해볼까요?</p>
         <img
