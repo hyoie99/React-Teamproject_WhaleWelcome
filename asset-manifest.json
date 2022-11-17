@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-Teamproject_WhaleWelcome/static/css/main.112fcc87.css",
-    "main.js": "/React-Teamproject_WhaleWelcome/static/js/main.983aad3a.js",
+    "main.css": "/React-Teamproject_WhaleWelcome/static/css/main.5bb0da79.css",
+    "main.js": "/React-Teamproject_WhaleWelcome/static/js/main.7b38c30d.js",
     "static/media/img6.png": "/React-Teamproject_WhaleWelcome/static/media/img6.11ae14eedcabbbcb6e1f.png",
     "static/media/img0.png": "/React-Teamproject_WhaleWelcome/static/media/img0.9675950d0339a8c647b9.png",
     "static/media/welcome.mp4": "/React-Teamproject_WhaleWelcome/static/media/welcome.92f43eb4ab7ceadcb282.mp4",
     "static/media/img5.png": "/React-Teamproject_WhaleWelcome/static/media/img5.f4bf6083fe10b575556b.png",
     "static/media/img7.png": "/React-Teamproject_WhaleWelcome/static/media/img7.aacae18e938050438a04.png",
-    "static/media/packaging.mp4": "/React-Teamproject_WhaleWelcome/static/media/packaging.56961d1a3a0242c6e7b6.mp4",
     "static/media/img9.png": "/React-Teamproject_WhaleWelcome/static/media/img9.664c1012bd9e6487a11f.png",
     "static/media/tab_fix.png": "/React-Teamproject_WhaleWelcome/static/media/tab_fix.7d0afff906c053a545ac.png",
     "static/media/img2.png": "/React-Teamproject_WhaleWelcome/static/media/img2.6710a80d5ab63eb1c67c.png",
+    "static/media/packaging.mp4": "/React-Teamproject_WhaleWelcome/static/media/packaging.0c377d49ce7928c9a125.mp4",
     "static/media/img8.png": "/React-Teamproject_WhaleWelcome/static/media/img8.e23f65a3d8c0e5ebac31.png",
     "static/media/truck.png": "/React-Teamproject_WhaleWelcome/static/media/truck.81fb72f3990932eb8ee1.png",
     "static/media/img4.png": "/React-Teamproject_WhaleWelcome/static/media/img4.dfc5fe7272e8cb9d54fe.png",
@@ -57,11 +57,11 @@
     "static/media/light.png": "/React-Teamproject_WhaleWelcome/static/media/light.7e164fffdf25f88680bf.png",
     "static/media/clock.png": "/React-Teamproject_WhaleWelcome/static/media/clock.85535e6bff8ef0182413.png",
     "index.html": "/React-Teamproject_WhaleWelcome/index.html",
-    "main.112fcc87.css.map": "/React-Teamproject_WhaleWelcome/static/css/main.112fcc87.css.map",
-    "main.983aad3a.js.map": "/React-Teamproject_WhaleWelcome/static/js/main.983aad3a.js.map"
+    "main.5bb0da79.css.map": "/React-Teamproject_WhaleWelcome/static/css/main.5bb0da79.css.map",
+    "main.7b38c30d.js.map": "/React-Teamproject_WhaleWelcome/static/js/main.7b38c30d.js.map"
   },
   "entrypoints": [
-    "static/css/main.112fcc87.css",
-    "static/js/main.983aad3a.js"
+    "static/css/main.5bb0da79.css",
+    "static/js/main.7b38c30d.js"
   ]
 }
