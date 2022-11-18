@@ -1,10 +1,12 @@
 .flex_div {
   /* background-color: bisque; */
+  width: 100%;
   height: 75%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .description {
@@ -159,8 +161,8 @@
 
 .skip_btn {
   position: absolute;
-  right: 8%;
-  bottom: 12%;
+  right: 100px;
+  bottom: 15px;
   background-color: transparent;
   border: none;
   color: #8a8a8a;

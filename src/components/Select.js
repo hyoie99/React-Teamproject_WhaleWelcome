@@ -43,8 +43,8 @@ function Select({ setLoading }) {
             ></img>
           </a>
         </div>
+        <button className={common.skip_btn}>건너뛰기</button>
       </div>
-      <button className={common.skip_btn}>건너뛰기</button>
     </div>
   );
 }
