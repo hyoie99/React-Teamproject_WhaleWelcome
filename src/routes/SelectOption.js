@@ -7,10 +7,12 @@ function SmallIcon({ index, onClick }) {
   return (
     <div onClick={onClick} className={`${style.icon}`}>
       <img
+        alt="선택한 아이콘 이미지"
         src={require(`../img/icon_img/icon${index}.png`)}
         className={`${style.preview_icon}`}
       ></img>
       <img
+        alt="하얀색 엑스표시 이미지"
         src={require(`../img/delete.png`)}
         className={`${style.delete_icon}`}
       ></img>
@@ -81,6 +83,11 @@ function SelectOption() {
 
   return (
     <div className={common.background}>
+      <img
+        alt="초록색 전등과 시계가 올려져있는 책상 이미지"
+        src={require("../img/option_table.png")}
+        className={style.table_img}
+      ></img>
       <div className={style.flex_div}>
         <h1 className={common.title}>
           웨일엔 다양한 기능이 풀옵션으로 갖춰져 있답니다! <br /> 입주 시 필요한
@@ -365,11 +372,7 @@ function SelectOption() {
             onClick={clickRight}
           ></img>
         </div>
-        <img
-          alt="초록색 전등과 시계가 올려져있는 책상 이미지"
-          src={require("../img/option_table.png")}
-          className={style.table_img}
-        ></img>
+
         <div className={style.preview}>
           {list.map((l) => (
             <SmallIcon index={l} onClick={() => clickCheckCir(l)} />
@@ -399,8 +402,8 @@ function SelectOption() {
             ></img>
           </Link>
         </div>
+        <button className={style.skip_btn}>건너뛰기</button>
       </div>
-      <button className={style.skip_btn}>건너뛰기</button>
     </div>
   );
 }
